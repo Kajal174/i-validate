@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #081b31;
+  color: #fff;
+  padding: 18px 12px;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  font-size: 1.3rem;
+  list-style: none;
+  padding: 0 13px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: rgb(138, 136, 136);
+}
+
+main {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 80vw;
+  margin: auto;
+  padding: 10px;
+}
+
+footer {
+  background-color: #081b31;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+  padding: 10px;
+}
+
+.container h1 {
+  padding: 8px 0;
+}
+
+input[type='submit'] {
+  background-color: rgb(87, 86, 86);
+  color: #fff;
+  width: 8vw;
+  height: 2.5rem;
+  font-size: 23px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type='text'] {
+  width: 30vw;
+  height: 5vh;
+  border: 2px solid gray;
+}
+
+input::placeholder {
+  padding-left: 1.2rem;
+  font-size: 1.2rem;
+}
+
+#resultcont div::first-letter {
+  text-transform: uppercase;
+}
+
+input[type='submit']:hover {
+  background-color: rgb(2, 151, 2);
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .container {
+    font-size: 12px;
+    /* padding: 1rem 8rem 0 3rem; */
+  }
+
+  input[type='text'] {
+    width: 70vw;
+    height: 4vh;
+    border: 1px solid gray;
+
+  }
+
+  input::placeholder {
+    padding-right: 2rem;
+    padding-left: .80rem;
+    font-size: 1rem;
+  }
+
+  input[type='submit'] {
+    width: 26vw;
+    height: 2.5rem;
+    background-color: black;
+  }
+
+  input[type='submit']:hover {
+    background-color: greenyellow;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 1rem 5rem 1rem 3rem;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+
+  .logo {
+    padding: 6px 0;
+    font-size: 20px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 15px;
+    filter: invert(1);
+  }
+}
